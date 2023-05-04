@@ -231,8 +231,8 @@
 // }
 
 
-const balance = 5000
+// const balance = 5000
 
-const mes = balance > 1500 ? "Все хорошо" : "Все плохо"
+// const mes = balance > 1500 ? "Все хорошо" : "Все плохо"
 
-console.log(mes)
+// console.log(mes)
