@@ -144,7 +144,6 @@
 // console.log(productName.includes("Ремонтный")); // true
 // console.log(productName.includes("ремонтный")); // false
 
-
 // const jsFileName = "script.js";
 // console.log(jsFileName.endsWith(".js")); // true
 
@@ -177,7 +176,6 @@
 // console.log("Mango" && "Poly"); // true && true -> "Poly"
 // console.log("Poly" && "Mango"); // true && true -> "Mango"
 
-
 // const age = 5;
 // console.log(age < 10 || age > 30); // true || false -> true
 
@@ -193,15 +191,48 @@
 // console.log(3 || true); // 3
 // console.log(true || 3); // true
 
-
 // console.log(!true); // false
 // console.log(!false); // true
-// console.log(!3); 
-// console.log(!"Mango"); 
-// console.log(!0); 
+// console.log(!3);
+// console.log(!"Mango");
+// console.log(!0);
 // console.log(!"");
 
 // const isOnline = true;
-// const isNotOnline = !isOnline; 
+// const isNotOnline = !isOnline;
 
 // console.log(location.host)
+
+// console.log(Boolean(0))
+
+// const sub = "vip";
+
+// const access = sub === "pro" || sub === "vip" || sub === "free";
+
+// console.log('Имеет ли доступ?', access);
+
+// const sub = "vip";
+
+// const access = sub === "pro" || sub === "vip" || sub === "free";
+
+// console.log('Имеет ли доступ?', access);
+
+
+// const x = 2;
+// const y = 4;
+// let result = x * y;
+
+// const d = 8;
+
+// if (result === d) {
+//   console.log("Все верно!");
+// } else {
+//   console.log("Ответ не правильный!");
+// }
+
+
+const balance = 5000
+
+const mes = balance > 1500 ? "Все хорошо" : "Все плохо"
+
+console.log(mes)
