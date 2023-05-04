@@ -217,7 +217,6 @@
 
 // console.log('Имеет ли доступ?', access);
 
-
 // const x = 2;
 // const y = 4;
 // let result = x * y;
@@ -230,9 +229,12 @@
 //   console.log("Ответ не правильный!");
 // }
 
-
 // const balance = 5000
 
 // const mes = balance > 1500 ? "Все хорошо" : "Все плохо"
 
 // console.log(mes)
+
+// const num = "5";
+// let result = Number(num);
+// console.log(result);
