@@ -238,3 +238,90 @@
 // const num = "5";
 // let result = Number(num);
 // console.log(result);
+
+// const age = "15px"
+// const parse = Number.parseInt(age);
+// console.log(parse)
+
+// const age = "15.9px"
+// const parse = Number.parseFloat(age);
+// console.log(parse)
+
+// const x = 20;
+// const y = 20;
+// const result = x !== y;
+// console.log(result)
+
+// console.log(Math.max(20, 90, 50, 40)); // 50
+// console.log(Math.round(1.2));
+// console.log(Math.round(1.5));
+// console.log(Math.pow(2, 4))
+// console.log(Math.random() * (10 - 1) + 1);
+
+// const x = 20;
+// const y = 10;
+// const result = Math.round(Math.random() * (x - y) + y);
+// const textResult = `Числа генерируются рандомно при каждом обновлении страницы от ${y} и до ${x}`;
+
+// console.log(result);
+// console.log(textResult.toUpperCase());
+
+// const age = 20;
+// const result = age >= 20 ? "Yes" : "No";
+// console.log(result);
+
+// const num1 = 5;
+// const num2 = 10;
+// let biggerNumber;
+
+// if (num1 > num2) {
+//   biggerNumber = num1;
+// } else {
+//   biggerNumber = num2;
+// }
+
+// console.log(biggerNumber)
+
+// const num1 = 5;
+// const num2 = 10;
+// const biggerNumber = num1 > num2 ? num1 : num2;
+
+// console.log(biggerNumber);
+
+// let cost;
+
+// const subscription = "premium";
+
+// switch (subscription) {
+//   case "free":
+//     cost = 10;
+//     break;
+
+//   case "pro":
+//     cost = 100;
+//     break;
+
+//   case "premium":
+//     cost = 500;
+//     break;
+
+//   default:
+//     console.log("Invalid subscription type");
+// }
+
+// console.log(cost);
+
+// let counter = 1;
+
+// while (counter <= 10) {
+//   console.log("counter: ", counter);
+//   counter += 1;
+// }
+
+// let clientCounter = 18;
+// const maxClients = 25;
+
+// while (clientCounter < maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
