@@ -325,3 +325,26 @@
 //   console.log(clientCounter);
 //   clientCounter += 1;
 // }
+
+// let clientCounter = 12;
+// const maxClients = 25;
+
+// while (clientCounter < maxClients) {
+//   console.log(clientCounter);
+//   clientCounter += 1;
+// }
+
+// let password = "";
+
+// do {
+//   password = prompt("Введите пароль длиннее 4-х символов", "");
+// } while (password.length < 5);
+
+// console.log("Ввели пароль: ", password);
+
+for (let i = 0; i <= 20; i += 5) {
+  console.log(i);
+}
+
+
+for 
