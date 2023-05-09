@@ -167,3 +167,6 @@
 
 // const shift = clients.shift("Test");
 // console.log(clients);
+
+const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+console.log(clients.slice(1, 4)); // ["Ajax", "Poly"]
