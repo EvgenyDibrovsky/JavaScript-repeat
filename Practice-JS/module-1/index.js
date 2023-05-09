@@ -373,12 +373,80 @@
 // }
 
 // console.log("Лог после цикла");
-const number = 10;
 
-for (let i = 0; i < number; i += 1) {
-  if (i % 2 === 0) {
-    continue;
-  }
+// const option = 2;
+// let message = "";
 
-  console.log("Нечетное i: ", i); // 1, 3, 5, 7, 9
-}
+// switch (option) {
+//   case 1:
+//     message = "Вы выбрали 1";
+//     break;
+
+//   case 2:
+//     message = "Вы выбрали 2";
+//     break;
+//   default:
+//     message = "Вы ничего не выбрали";
+// }
+// console.log(message);
+
+// for (let i = 0; i <= 10; i += 1) {
+//   console.log(i);
+// }
+
+// for (let i = 10; i >= 0; i -= 1) {
+//   console.log(i);
+// }
+
+// console.log(19 % 7) Отстаток
+
+// const min = 123;
+// const max = 134;
+// let total = 0;
+
+// for (let i = min; i <= max; i += 1) {
+//   // console.log(i);
+//   if (i % 2 !== 0) {
+//     // console.log("Не четные числа", i);
+//     continue;
+//   }
+
+//   console.log("Четные числа", i);
+//   total += i;
+// }
+
+// console.log("total", total);
+
+// let balance = 10000;
+// const payment = 2000;
+
+// console.log(`Общая стоимость заказа составляет ${payment}`);
+// if (payment <= balance) {
+//   balance -= payment;
+//   console.log("Спасибо за покупку! :)");
+//   console.log(`На Вашем счету осталось ${balance}`);
+// } else {
+//   console.log("На Вашем счету недостаточно средств")
+// }
+// console.log("Операция завершена")
+
+// const totalSpent = 12002;
+// let payment = 2310;
+// let discount = 0;
+
+// if (totalSpent >= 100 && totalSpent <= 1000) {
+//   console.log("Бронзовый партнер, скидка 2%");
+//   discount = 0.02;
+// } else if (totalSpent >= 1000 && totalSpent <= 5000) {
+//   console.log("Серебрянный партнер, скидка 5%");
+//   discount = 0.05;
+// } else if (totalSpent >= 5000) {
+//   console.log("Золотой партнер, скидка 10%");
+//   discount = 0.1;
+// } else {
+//   console.log("Не партнер, скидка 0%");
+//   discount = 0;
+// }
+// console.log(
+//   `Оформляем заказ на сумму ${payment} zł. со скидкой ${discount * 100}% `
+// );
