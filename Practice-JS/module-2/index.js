@@ -168,5 +168,171 @@
 // const shift = clients.shift("Test");
 // console.log(clients);
 
-const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
-console.log(clients.slice(1, 4)); // ["Ajax", "Poly"]
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(1, 4)); // ["Ajax", "Poly"]
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// clients.push("Test");
+// clients.unshift("Test");
+// const result = clients.join(" ")
+// console.log(clients);
+// console.log(result);
+
+// // 1. Объявление функции multiply
+// function multiply() {
+//     // Тело функции
+//     console.log("Это лог при вызове функции multiply");
+//   }
+
+//   // 2. Вызовы функции multiply
+//   multiply(); // 'Это лог при вызове функции multiply'
+//   multiply(); // 'Это лог при вызове функции multiply'
+//   multiply(); // 'Это лог при вызове функции multiply'
+// 1. Объявление параметров x, y, z
+
+// function multiply(x, y, z) {
+//     console.log(`Результат умножения равен ${x * y * z}`);
+//   }
+
+//   // 2. Передача аргументов
+//   multiply(2, 3, 5); // Результат умножения равен 30
+//   multiply(4, 8, 12); // Результат умножения равен 384
+//   multiply(17, 6, 25); // Результат умножения равен 2550
+
+// function multiply(x, y, z) {
+//     console.log("Код до return выполняется как обычно");
+
+//     // Возвращаем результат выражения умножения
+//     return x * y * z;
+
+//     console.log("Этот лог никогда не выполнится, он стоит после return");
+//   }
+
+//   // Результат работы функции можно сохранить в переменную
+//   let result = multiply(2, 3, 5);
+//   console.log(result); // 30
+
+//   result = multiply(4, 8, 12);
+//   console.log(result); // 384
+
+//   result = multiply(17, 6, 25);
+//   console.log(result); // 2550
+
+// function multily(x, y, s) {
+//   console.log("Просто консоль лог");
+
+//   return x + y * s;
+// }
+
+// let result = multily(2, 5, 10);
+// console.log(result);
+
+// result = multily(54, 45, 4);
+// console.log(result);
+
+// result = multily(54, 45, 3);
+// console.log(result);
+
+// result = multily(1, 1, 2);
+// console.log(result);
+
+// function multiply(x, y, z) {
+//     console.log(`Результат умножения равен ${x * y * z}`);
+//   }
+
+//   console.log("Лог до вызова функции multiply");
+//   multiply(2, 3, 5); // Результат умножения равен 30
+//   console.log("Лог после вызова функции multiply");
+
+//   // Последовательность логов в консоли
+//   // "Лог до вызова функции multiply"
+//   // "Результат умножения равен 30"
+//   // "Лог после вызова функции multiply"
+
+// function count(countFrom = 1, countTo = 10, step = 1) {
+//   console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+//   for (let i = countFrom; i >= countTo; i -= step) console.log(i);
+// }
+
+// count(10, 0, 1);
+
+// function multiply() {
+//     let total = 1;
+
+//     for (const argument of arguments) {
+//       total *= argument;
+//     }
+//     return total;
+//   }
+
+//   console.log(multiply(1, 2, 3)); //  6
+//   console.log(multiply(1, 2, 3, 4)); //  24
+//   console.log(multiply(1, 2, 3, 4, 5)); //  120
+
+// function withdraw(amount, balance) {
+//     if (amount === 0) {
+//       console.log("Для проведения операции введите сумму больше нуля");
+//     } else if (amount > balance) {
+//       console.log("Недостаточно средств на счету");
+//     } else {
+//       console.log("Операция снятия средств проведена успешно");
+//     }
+//   }
+
+//   withdraw(0, 300); // "Для проведения операции введите сумму больше нуля"
+//   withdraw(500, 300); // "Недостаточно средств на счету"
+//   withdraw(100, 300); // "Операция снятия средств проведена успешно"
+
+//   function withdraw(amount, balance) {
+//     if (amount === 0) {
+//       console.log("Для проведения операции введите сумму больше нуля");
+//       return;
+//     }
+
+//     if (amount > balance) {
+//       console.log("Недостаточно средств на счету");
+//       return;
+//     }
+
+//     console.log("Операция снятия средств проведена");
+//   }
+
+//   withdraw(0, 300); // "Для проведения операции введите сумму больше нуля"
+//   withdraw(500, 300); // "Недостаточно средств на счету"
+//   withdraw(100, 300); // "Операция снятия средств проведена"
+
+// function fnA() {
+//   console.log("Лог внуртри функции fnA до вызова fnB");
+//   fnB();
+//   console.log("Лог внуртри функции fnA после вызова fnB");
+// }
+
+// function fnB() {
+//   console.log("Лог внутри функции fnB");
+// }
+
+// console.log("Лог перед вызовом fnA");
+// fnA();
+// console.log("Лог после вызова fnA");
+
+// // "Лог перед вызовом fnA"
+// // "Лог внуртри функции fnA до вызова fnB"
+// // "Лог внутри функции fnB"
+// // "Лог внуртри функции fnA после вызова fnB"
+// // "Лог после вызова fnA"
+
+function bar() {
+  console.log("bar");
+}
+
+function baz() {
+  console.log("baz");
+}
+
+function foo() {
+  console.log("foo");
+  bar();
+  baz();
+}
+
+foo();
