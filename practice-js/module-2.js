@@ -321,18 +321,59 @@
 // // "Лог внуртри функции fnA после вызова fnB"
 // // "Лог после вызова fnA"
 
-function bar() {
-  console.log("bar");
-}
+// function bar() {
+//   console.log("bar");
+// }
 
-function baz() {
-  console.log("baz");
-}
+// function baz() {
+//   console.log("baz");
+// }
 
-function foo() {
-  console.log("foo");
-  bar();
-  baz();
-}
+// function foo() {
+//   console.log("foo");
+//   bar();
+//   baz();
+// }
 
-foo();
+// foo();
+
+// const friends = ["friend-1", "friend-2", "friend-3"];
+// console.table(friends);
+// console.table(friends[0]);
+
+// friends[2] = "qeqeqe"
+// friends[1] = 444
+//  console.log(friends)
+
+// let a = 10;
+// let b = 30;
+
+// console.log(a);
+// console.log(b);
+
+// a = 20;
+
+// console.log(a)
+// console.log(b)
+
+// const a = [1, 2, 3, 4, 5];
+// const b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a[0] = 100;
+
+// console.log(a);
+// console.log(b);
+
+// console.log(a === b);
+
+// const friends = ["friend", "friend", "friend", "friend", "friend"];
+// // console.table(friends);
+
+// for (let i = 0; i <= friends.length - 1; i += 1) {
+//   friends[i] += `-${i}`;
+// }
+
+// console.table(friends);
