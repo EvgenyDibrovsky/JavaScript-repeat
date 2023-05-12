@@ -377,3 +377,107 @@
 // }
 
 // console.table(friends);
+
+// const cart = [32, 23, 50, 54, 75, 23];
+
+// let total = 0;
+
+// // for (let i = 0; i < cart.length; i += 1) {
+// //   console.table(cart[i]);
+// //   total += cart[i];
+// // }
+
+// for (const value of cart) {
+//   total += value;
+// }
+
+// console.log("Total:", total);
+
+// const numbers = [32, 23, 50, 54, 75, 23, 10];
+// let total = 0;
+// let totalNo = 0;
+// numbers[0] = 42;
+// numbers[1] = 24;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//   const number = numbers[i];
+//   console.log(number);
+
+//   if (number % 2 === 0) {
+//     console.log("Четное число");
+//     total += number;
+//   } else if (number % 2 !== 0) {
+//     console.log("Не четное число");
+//     totalNo += number;
+//   }
+// }
+
+// for (const number of numbers) {
+//   console.log(number);
+//   if (number % 2 === 0) {
+//     console.log("Четное число");
+//     total += number;
+//   } else if (number % 2 !== 0) {
+//     console.log("Не четное число");
+//     totalNo += number;
+//   }
+// }
+// console.log("Total - четные", total);
+// console.log("Total - не четные", totalNo);
+
+// for (const value of cart) {
+//     console.log(value[i])
+// }
+
+// for (const number of numbers) {
+//   if (number % 2 !== 0) {
+//     // console.log("Пропустить", number);
+//     continue;
+//   }
+//   console.log(`${number} - Четное`);
+//   total += number;
+// }
+
+const logins = ["enfewrfew", "enwfiewrn", "23412fdvsdfv", "23412f"];
+const loginToFind = "23412f";
+let message = `Пользователь ${loginToFind} не найден`;
+
+// for (let i = 0; i < logins.length; i += 1) {
+//   const login = logins[i];
+
+//   console.log("login:", login);
+//   console.log(`${login} === ${loginToFind}:`, login === loginToFind);
+
+//   if (login === loginToFind) {
+//     message = `Пользователь ${loginToFind} найден`;
+//     break;
+//   }
+
+// }
+
+// for (const login of logins) {
+//   console.log("login:", login);
+//   console.log(`${login} === ${loginToFind}:`, login === loginToFind);
+
+//   if (login === loginToFind) {
+//     message = `Пользователь ${loginToFind} найден`;
+//     break;
+//   }
+// }
+// console.log(message);
+
+// if (logins.includes(loginToFind)) {
+//   message = `Пользователь ${loginToFind} найден`;
+// }
+
+// console.log(message);
+
+// const result = logins.includes(loginToFind) ? `Пользователь ${loginToFind} найден` : `Пользователь ${loginToFind} не найден`
+
+// console.log(result)
+
+// const result = logins.includes(loginToFind)
+
+// console.log(result)
+
+
