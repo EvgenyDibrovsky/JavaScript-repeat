@@ -480,4 +480,15 @@ let message = `Пользователь ${loginToFind} не найден`;
 
 // console.log(result)
 
+const numbers = [21, 9, 24, 5, 57, 2, 5];
 
+let smallesNumber = numbers[0];
+
+// console.log(smallesNumber);
+
+for (const number of numbers) {
+  console.log(number);
+  if (number < smallesNumber) {
+    smallesNumber - number;
+  }
+}
