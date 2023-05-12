@@ -480,15 +480,54 @@ let message = `Пользователь ${loginToFind} не найден`;
 
 // console.log(result)
 
-const numbers = [21, 9, 24, 5, 57, 2, 5];
+// const numbers = [21, 9, 24, 5, 57, 2, 5];
 
-let smallesNumber = numbers[0];
+// let smallesNumber = numbers[0];
 
-// console.log(smallesNumber);
+// for (const number of numbers) {
+//   if (number < smallesNumber) {
+//     smallesNumber = number;
+//   }
+// }
+// console.log("Самое маленькое число:", smallesNumber);
 
-for (const number of numbers) {
-  console.log(number);
-  if (number < smallesNumber) {
-    smallesNumber - number;
-  }
+// let bigNumber = numbers[0];
+
+// for (const number of numbers) {
+//   if (number > bigNumber) {
+//     bigNumber = number;
+//   }
+// }
+// console.log("Самое маленькое число:", bigNumber);
+
+// const friends = ["frieds-1", "frieds-2", "frieds-3", "frieds-4", "frieds-5"];
+// let string = "";
+// // let string = " ";
+// // for (const friend of friends) {
+// //   string += friend + ",";
+// //   string = string.slice(0, string.length - 1);
+// // }
+// // console.log(string);
+// string = friends.join(", ");
+// console.log(string);
+
+const string = "JavaScript";
+const Letters = string.split("");
+let invertedString = "";
+console.log(Letters);
+
+for (const Letter of Letters) {
+  //   console.log(Letter);
+
+  //   if (Letter === Letter.toLowerCase()) {
+  //     console.log("Эта буква в нижнем регистре - ", Letter);
+  //     invertedString += Letter.toUpperCase();
+  //   } else {
+  //     console.log("Эта буква в верхнем регистре - ", Letter);
+  //     invertedString += Letter.toLowerCase();
+  //   }
+  invertedString += Letter === Letter.toLowerCase()
+    ? Letter.toUpperCase()
+    : Letter.toLowerCase();
 }
+console.log("Инверсия -", invertedString);
