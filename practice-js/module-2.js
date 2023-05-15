@@ -511,23 +511,159 @@ let message = `Пользователь ${loginToFind} не найден`;
 // string = friends.join(", ");
 // console.log(string);
 
-const string = "JavaScript";
-const Letters = string.split("");
-let invertedString = "";
-console.log(Letters);
+// const string = "JavaScript";
+// const Letters = string.split("");
+// let invertedString = "";
+// console.log(Letters);
 
-for (const Letter of Letters) {
-  //   console.log(Letter);
+// for (const Letter of Letters) {
+//   //   console.log(Letter);
 
-  //   if (Letter === Letter.toLowerCase()) {
-  //     console.log("Эта буква в нижнем регистре - ", Letter);
-  //     invertedString += Letter.toUpperCase();
-  //   } else {
-  //     console.log("Эта буква в верхнем регистре - ", Letter);
-  //     invertedString += Letter.toLowerCase();
-  //   }
-  invertedString += Letter === Letter.toLowerCase()
-    ? Letter.toUpperCase()
-    : Letter.toLowerCase();
-}
-console.log("Инверсия -", invertedString);
+//   //   if (Letter === Letter.toLowerCase()) {
+//   //     console.log("Эта буква в нижнем регистре - ", Letter);
+//   //     invertedString += Letter.toUpperCase();
+//   //   } else {
+//   //     console.log("Эта буква в верхнем регистре - ", Letter);
+//   //     invertedString += Letter.toLowerCase();
+//   //   }
+//   invertedString += Letter === Letter.toLowerCase()
+//     Letter.toUpperCase()
+//     : Letter.toLowerCase();
+// }
+// console.log("Инверсия -", invertedString);
+
+// const title = "На первый взгляд код следующего примера выглядит хорошо.";
+
+// const slug = title.toLowerCase().split(" ").join("-");
+// console.log(slug);
+
+// const array1 = [1, 2, 3, 4, 5];
+// const array2 = [6, 7, 8];
+// const array3 = [9, 10, 11];
+// const array4 = [12, 13, 14];
+// let total = 0;
+
+// const numbers = array1.concat(array2, array3, array4);
+
+// for (const number of numbers) {
+//   total += number;
+// }
+
+// console.table("Total:", total);
+
+// const cards = [
+//   "Карточка-1",
+//   "Карточка-2",
+//   "Карточка-3",
+//   "Карточка-4",
+//   "Карточка-5",
+// ];
+// // console.table(cards);
+// // const cardToRemove = "Карточка-3";
+// // const index = cards.indexOf(cardToRemove);
+// // console.log(index);
+// // cards.splice(index, 1);
+// // console.table(cards);
+
+// // const carToInsert = "Карточка-6";
+// // const index = 3;
+// // cards.splice(cards.length, 0, 10, 20, 30);
+
+// // console.table(cards);
+
+// const carToUpdate = "Карточка-4";
+// // cards.splice(3, 1, 333);
+// // console.table(cards);
+// const index = cards.indexOf(carToUpdate);
+// console.log(index);
+
+// cards.splice(index, 1, "Привет");
+// console.table(cards);
+
+// const add = function (x, y) {
+//   console.log(x);
+//   console.log(y);
+//   //   const result = x + y;
+//   return x + y;
+//   //   console.log("Результа:", result);
+//   //   console.log("Выполнение функции");
+// };
+// const r1 = add(3, 4);
+// console.log("r1: ", r1);
+// const r2 = add(1, 3);
+// console.log("r2: ", r2);
+// const r3 = add(6, 44);
+// console.log("r3: ", r3);
+
+// const fn = function () {
+//   console.log(1);
+//   console.log(2);
+//   console.log(3);
+//   return "Result"
+// };
+// console.log(fn());
+
+// const fn1 = function () {
+//   console.log("Выполняется футкция fn1");
+//   fn2();
+// };
+// const fn2 = function () {
+//   console.log("Выполняется футкция fn2");
+//   fn3();
+// };
+// const fn3 = function () {
+//   console.log("Выполняется футкция fn3");
+//   console.log(value);
+// };
+// fn1();
+// fn2();
+// fn3();
+
+// const fn = function () {
+// //   console.table(arguments);
+
+//   const args = Array.from(arguments);
+//   console.log(args);
+// };
+
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3, 4, 5, 6, 7);
+// fn(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// const fn = function (...args) {
+//   //   console.table(arguments);
+
+//   console.log(args);
+// };
+
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3, 4, 5, 6, 7);
+// fn(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+// const fn = function (...args) {
+//   console.log(args);
+//   let total = 0;
+//   for (const arg of args) {
+//     total += arg;
+//   }
+//   return total;
+// };
+
+// console.log(fn(1, 2, 3, 4, 5, 6, 7));
+// console.log(fn(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+// const filteNumbers = function (array, ...args) {
+//   //   console.log("array", array);
+//   //   console.log("args", args);
+//   const newArray = [];
+//   for (const element of array)
+//     if (args.includes(element)) {
+//       newArray.push(element);
+//       console.log(`${element} есть совпадение`);
+//     }
+//   console.table(newArray);
+// };
+
+// console.log(filteNumbers([1, 4, 6, 7, 9, 4, 88], 4, 8, 64, 46, 65, 344, 88));
+// console.log(filteNumbers([14, 34, 43, 25, 88], 4, 46, 34, 43, 88));
+
