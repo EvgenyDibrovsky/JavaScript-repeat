@@ -349,7 +349,64 @@
 // console.log(userViews); // 4827
 // console.log(userLikes); // 1308
 
-const rgb = [200, 255, 100];
-const [red, green, blue] = rgb;
+// const rgb = [200, 255, 100];
+// const [red, green, blue] = rgb;
 
-console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
+// console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
+
+// const object = {
+//   a: 2,
+//   b: 3,
+//   c: 4,
+// };
+// object.c = 5;
+
+// console.log(object.c);
+
+// const playlist = {
+//   name: "Мой супер плейлист",
+//   raiting: 5,
+//   Tracks: ["трек-1", "трек-2", "трек-3"],
+//   trackCount: 3,
+//   changeName(newName) {
+//     console.log("this внутри changeName: ", this);
+
+//     this.name = newName;
+//   },
+
+//   addTrack(track) {
+//     this.Tracks.push(track);
+//     this.trackCount = this.Tracks.length;
+//   },
+
+//   updateRating(newRating) {
+//     this.raiting = newRating;
+//   },
+// };
+
+// playlist.changeName("Новое имя");
+// console.log(playlist);
+
+// playlist.addTrack("новый трек 1");
+// playlist.addTrack("новый трек 2");
+// playlist.addTrack("новый трек 3");
+// playlist.addTrack("новый трек 4");
+// console.log(playlist);
+
+// playlist.updateRating("55");
+// console.log(playlist);
+
+// const keys = Object.keys(playlist);
+// console.log(keys);
+
+// const object = {
+//   a: 2,
+//   b: 3,
+//   c: 4,
+// };
+
+// const keys = Object.keys(object);
+// console.log(keys);
+
+// const values = Object.values(object);
+// console.log(values);
