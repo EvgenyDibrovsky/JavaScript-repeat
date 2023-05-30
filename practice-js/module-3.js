@@ -228,18 +228,60 @@
 //   total += value;
 // }
 
-// console.log(total); // 20
-const book = {
-  title: "The Last Kingdom",
-  author: "Bernard Cornwell",
-  rating: 8.38,
-};
-const keys = Object.keys(book);
-console.log(keys); // ['title', 'author', 'rating']
+// // console.log(total); // 20
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   rating: 8.38,
+// };
+// const keys = Object.keys(book);
+// console.log(keys); // ['title', 'author', 'rating']
 
-const values = Object.values(book);
-console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
+// const values = Object.values(book);
+// console.log(values); // ['The Last Kingdom', 'Bernard Cornwell', 8.38]
 
-const entries = Object.entries(book);
-console.log(entries);
-// [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]
+// const entries = Object.entries(book);
+// console.log(entries);
+// // [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]
+
+// const temps = [14, -4, 25, 8, 11];
+
+// // В консоли будет массив
+// console.log(temps);
+// // ❌ Так не сработает, потому что передаём целый массив
+// console.log(Math.max(temps)); // NaN
+
+// // В консоли будет набор отдельных чисел
+// console.log(...temps);
+// // ✅ Распылим коллекцию элементов как отдельные аргументы
+// console.log(Math.max(...temps)); // 25
+
+// const temps = [14, -4, 25, 8, 11];
+
+// // Это точная, но независимая копия массива temps
+// const copyOfTemps = [...temps];
+// console.log(copyOfTemps); // [14, -4, 25, 8, 11]
+// console.log(temps);
+// const lastWeekTemps = [14, 25, 11];
+// const currentWeekTemps = [23, 17, 18];
+// const allTemps = [...lastWeekTemps, ...currentWeekTemps];
+// console.log(allTemps); // [14, 25, 11, 23, 17, 18]
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15 };
+
+// const third = { propB: 20, ...first, ...second };
+// console.log(third); // { propA: 5, propB: 10, propC: 15 }
+
+// const fourth = { ...first, ...second, propB: 20 };
+// console.log(fourth); // { propA: 5, propB: 20, propC: 15 }
+
+// const fifth = { ...first, propB: 20, ...second };
+// console.log(fifth); // { propA: 5, propB: 20, propC: 15 }
+function multiply(...args) {
+  console.log(args); // массив всех аргументов
+}
+
+multiply(1, 2);
+multiply(1, 2, 3);
+multiply(1, 2, 3, 4);

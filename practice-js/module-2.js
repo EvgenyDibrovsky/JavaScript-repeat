@@ -667,3 +667,8 @@ let message = `Пользователь ${loginToFind} не найден`;
 // console.log(filteNumbers([1, 4, 6, 7, 9, 4, 88], 4, 8, 64, 46, 65, 344, 88));
 // console.log(filteNumbers([14, 34, 43, 25, 88], 4, 46, 34, 43, 88));
 
+const temps = [14, -4, 25, 8, 11];
+
+// Это точная, но независимая копия массива temps
+const copyOfTemps = [...temps];
+console.log(copyOfTemps); // [14, -4, 25, 8, 11]
