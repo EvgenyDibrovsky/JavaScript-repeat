@@ -278,10 +278,78 @@
 
 // const fifth = { ...first, propB: 20, ...second };
 // console.log(fifth); // { propA: 5, propB: 20, propC: 15 }
-function multiply(...args) {
-  console.log(args); // массив всех аргументов
-}
+// function multiply(...args) {
+//   console.log(args); // массив всех аргументов
+// }
 
-multiply(1, 2);
-multiply(1, 2, 3);
-multiply(1, 2, 3, 4);
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+// };
+
+// // Добавим картинку обложки если её нет в объекте книги
+// const {
+//   title,
+//   coverImage = "https://via.placeholder.com/640/480",
+//   author,
+// } = book;
+
+// console.log(title); // The Last Kingdom
+// console.log(author); // Bernard Cornwell
+// console.log(coverImage); // https://via.placeholder.com/640/480
+
+// const firstBook = {
+//   title: "The Last Kingdom",
+//   coverImage:
+//     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+// };
+
+// const {
+//   title: firstTitle,
+//   coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+// } = firstBook;
+
+// console.log(firstTitle); // The Last Kingdom
+// console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+
+// const secondBook = {
+//   title: "Сон смешного человека",
+// };
+
+// const {
+//   title: secondTitle,
+//   coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+// } = secondBook;
+
+// console.log(secondTitle); // Сон смешного человека
+// console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// const {
+//   name,
+//   tag,
+//   stats: { followers, views: userViews, likes: userLikes = 0 },
+// } = user;
+
+// console.log(name); // Jacques Gluke
+// console.log(tag); // jgluke
+// console.log(followers); // 5603
+// console.log(userViews); // 4827
+// console.log(userLikes); // 1308
+
+const rgb = [200, 255, 100];
+const [red, green, blue] = rgb;
+
+console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
