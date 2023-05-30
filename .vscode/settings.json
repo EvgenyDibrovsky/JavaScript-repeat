@@ -1,3 +1,4 @@
 {
-    "genieai.enableConversationHistory": false
+    "genieai.enableConversationHistory": false,
+    "liveServer.settings.port": 5501
 }
