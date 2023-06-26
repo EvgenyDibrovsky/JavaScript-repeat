@@ -410,3 +410,16 @@
 
 // const values = Object.values(object);
 // console.log(values);
+
+// const numbers = [1, 2, 3, 4, 5].concat([6, 7, 8, 9, 10], [11, 12, 13]);
+// console.log(numbers);
+
+// const numbers = [0, 1, 3, ...[1, 2, 3, 4, 5], 6, 7];
+// console.log(numbers);
+
+// const temps = [14, -4, 25, 8, 11];
+
+// console.log(Math.max(1, 4, 14, 25, 42, 21));
+// console.log(Math.min(...temps));
+
+// console.log(Math.max(...temps) - Math.min(...temps));
