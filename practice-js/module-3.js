@@ -423,3 +423,18 @@
 // console.log(Math.min(...temps));
 
 // console.log(Math.max(...temps) - Math.min(...temps));
+
+// function doStuffWithBook(book) {
+//   // Делаем что-то со свойствами объекта
+//   console.log(book.rating);
+//   console.log(book.numberOfPages);
+//   // И так далее
+// }
+// // ✅ Всё понятно
+// doStuffWithBook({
+//   title: "The Last Kingdom",
+//   numberOfPages: 736,
+//   downloads: 10283,
+//   rating: 8.38,
+//   isPublic: true,
+// });
